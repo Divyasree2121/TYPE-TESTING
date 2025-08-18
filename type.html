@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Speed Test</title>
+  <link rel="stylesheet" href="C:\Users\divya\OneDrive\Desktop\project\type testing\type.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Typing Speed Test</h2>
+    <p>Time: <span id="timer">60s</span></p>
+    <p>Mistakes: <span id="mistakes">0</span></p>
+
+    <div id="quote"></div>
+    <textarea id="quote-input" placeholder="Start typing when you're ready..." disabled></textarea>
+
+    <div>
+      <button id="start-test" onclick="startTest()">Start Test</button>
+      <button id="stop-test" onclick="displayResult()" style="display:none;">Stop Test</button>
+      <button id="restart" onclick="restartTest()" style="display:none;">Restart Test</button>
+      <button id="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
+    </div>
+
+    <div class="result" style="display:none;">
+      <h3>Results</h3>
+      <p>WPM: <span id="wpm"></span></p>
+      <p>Accuracy: <span id="accuracy"></span></p>
+    </div>
+  </div>
+
+  <script src="C:\Users\divya\OneDrive\Desktop\project\type testing\type.js"></script>
+</body>
+</html>
